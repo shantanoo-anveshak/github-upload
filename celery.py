@@ -5,6 +5,7 @@ from celery import Celery
 # "transport" for rabbitmq is "amqp"
 #first argument to Celery is project package name
 #third argument backend is backend url and rpc means sending the results back as AMQP messages
+#demo comment 
 
 app = Celery('test_celery',
              broker='amqp://shanty:shanty123@localhost/shanty_vhost',
