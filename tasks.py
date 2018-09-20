@@ -6,7 +6,7 @@ import time
 @app.task
 def longtime_add(x, y):
     print('long time task begins')
-    # sleep 10 seconds
-    time.sleep(10)
+    # sleep 15 seconds
+    time.sleep(15)
     print('long time task finished')
     return x + y
