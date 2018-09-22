@@ -3,6 +3,7 @@ from test_celery.celery import app
 import time
 
 
+
 @app.task
 def longtime_add(x, y):
     print('long time task begins')
@@ -11,6 +12,23 @@ def longtime_add(x, y):
     print('long time task finished')
     return x + y
 
+<<<<<<< d70a107793dc432b2947ad253758aedc01846918
+
+
+@app.task
+def longtime_subtract(x, y):
+    print('long time task begins')
+    # sleep 15 seconds
+    time.sleep(15)
+    print('long time task finished')
+    return x - y
+
+
+
+
+
+
+=======
 @app.task
 def subtract(x, y):
     print('subtract task begins')
@@ -18,3 +36,4 @@ def subtract(x, y):
     time.sleep(10)
     print('subtract task finished')
     return x - y
+>>>>>>> revised subtract task
