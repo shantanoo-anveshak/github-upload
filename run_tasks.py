@@ -18,3 +18,6 @@ if __name__ == '__main__':
     time.sleep(5)
     print ('Subtract Task finished? ', result1.ready())
     print ('Subtract Task result: ', result1.result)
+    result3 = multiply.delay(4,5)
+    print('Multiply task finished?', result3.ready())
+    print('Multiply Task result: ', result3.result)
