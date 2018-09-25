@@ -25,3 +25,11 @@ def multiply(x, y):
     time.sleep(10)
     print('Multiply task finished')
     return x * y
+
+@app.task
+def division(x, y):
+    print('Division task begins')
+    # sleep 15 seconds
+    time.sleep(10)
+    print('Division task finished')
+    return x / y
