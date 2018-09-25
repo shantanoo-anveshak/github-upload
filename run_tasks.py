@@ -21,3 +21,10 @@ if __name__ == '__main__':
     result3 = multiply.delay(4,5)
     print('Multiply task finished?', result3.ready())
     print('Multiply Task result: ', result3.result)
+
+    time.sleep(5)
+    print ('Division Task finished? ', result1.ready())
+    print ('Division Task result: ', result1.result)
+    result3 = division.delay(4,5)
+    print('Division task finished?', result3.ready())
+    print('Division Task result: ', result3.result)
