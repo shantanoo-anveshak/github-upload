@@ -6,7 +6,7 @@ from celery import Celery
 #first argument to Celery is project package name
 #third argument backend is backend url and rpc means sending the results back as AMQP messages
 
-app = Celery('test_celery',
-             broker='amqp://shanty:shanty123@localhost/shanty_vhost',
+app = Celery('github-upload',
+             broker='amqp://chetan:chetan@localhost/',
              backend='rpc://',
-             include=['test_celery.tasks'])
+             include=['github-upload.tasks'])
